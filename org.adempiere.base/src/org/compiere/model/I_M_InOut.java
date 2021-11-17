@@ -1010,4 +1010,23 @@ public interface I_M_InOut
 	  * Weight of a product
 	  */
 	public BigDecimal getWeight();
+
+	/**
+	 * Author: David Marquez
+	 * Email: davidmarsant@gmail.com
+	 * Date: 2021/11/16
+	 */
+	
+	/** Column name User1_ID */
+    public static final String COLUMNNAME_SM_Usuario_ID = "SM_Usuario_ID";
+
+	/** Set User Element List 1.
+	  * User defined list element #1
+	  */
+	public void setSM_Usuario_ID (int SM_Usuario_ID);
+
+	/** Get User Element List 1.
+	  * User defined list element #1
+	  */
+	public int getSM_Usuario_ID();
 }

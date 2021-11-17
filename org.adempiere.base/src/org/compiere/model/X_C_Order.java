@@ -2220,4 +2220,33 @@ public class X_C_Order extends PO implements I_C_Order, I_Persistent
 			 return Env.ZERO;
 		return bd;
 	}
+	
+	/**
+	 * Author: David Marquez
+	 * Email: davidmarsant@gmail.com
+	 * Date: 2021/11/16
+	 */
+	
+	/** Set Final Client
+		@param SM_Usuario_ID
+		Final Client
+	  */
+	public void setSM_Usuario_ID (int SM_Usuario_ID)
+	{
+		if (SM_Usuario_ID < 1) 
+			set_Value (COLUMNNAME_SM_Usuario_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_Usuario_ID, Integer.valueOf(SM_Usuario_ID));
+	}
+	
+	/** Get Final Client
+		@return Final Client
+	  */
+	public int getSM_Usuario_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_Usuario_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
 }

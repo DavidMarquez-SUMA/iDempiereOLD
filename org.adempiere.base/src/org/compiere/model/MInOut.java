@@ -362,6 +362,16 @@ public class MInOut extends X_M_InOut implements DocAction
 		this (order.getCtx(), 0, order.get_TrxName());
 		setClientOrg(order);
 		setC_BPartner_ID (order.getC_BPartner_ID());
+		
+		/**
+		 * Author: David Marquez
+		 * Email: davidmarsant@gmail.com
+		 * Date: 2021/11/16
+		 * 
+		 * This is the final client ID
+		 */
+		setSM_Usuario_ID (order.getSM_Usuario_ID()); 
+		
 		setC_BPartner_Location_ID (order.getC_BPartner_Location_ID());	//	shipment address
 		setAD_User_ID(order.getAD_User_ID());
 		//

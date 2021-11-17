@@ -1344,72 +1344,73 @@ public class X_C_Payment extends PO implements I_C_Payment, I_Persistent
 	}
 
 	/** Set Receipt.
-		@param IsReceipt 
-		This is a sales transaction (receipt)
-	  */
-	public void setIsReceipt (boolean IsReceipt)
-	{
-		set_Value (COLUMNNAME_IsReceipt, Boolean.valueOf(IsReceipt));
-	}
+	@param IsReceipt 
+	This is a sales transaction (receipt)
+  */
+public void setIsReceipt (boolean IsReceipt)
+{
+	set_Value (COLUMNNAME_IsReceipt, Boolean.valueOf(IsReceipt));
+}
 
-	/** Get Receipt.
-		@return This is a sales transaction (receipt)
-	  */
-	public boolean isReceipt () 
+/** Get Receipt.
+	@return This is a sales transaction (receipt)
+  */
+public boolean isReceipt () 
+{
+	Object oo = get_Value(COLUMNNAME_IsReceipt);
+	if (oo != null) 
 	{
-		Object oo = get_Value(COLUMNNAME_IsReceipt);
-		if (oo != null) 
-		{
-			 if (oo instanceof Boolean) 
-				 return ((Boolean)oo).booleanValue(); 
-			return "Y".equals(oo);
-		}
-		return false;
+		 if (oo instanceof Boolean) 
+			 return ((Boolean)oo).booleanValue(); 
+		return "Y".equals(oo);
 	}
-	
-	/****Set IsCash***/
+	return false;
+}
+/********************************AGREGADO POR P.S.****************************************************/
+/****Set IsCash***/
 
-	public void setIsCash (boolean IsCash)
-	{
-		set_Value (COLUMNNAME_IsCash, Boolean.valueOf(IsCash));
-	}
-	
-	/** Get Receipt.
-		@return This is a sales transaction (receipt)
-	  */
-	public boolean IsCash () 
-	{
-		Object oo = get_Value(COLUMNNAME_IsCash);
-		if (oo != null) 
-		{
-			 if (oo instanceof Boolean) 
-				 return ((Boolean)oo).booleanValue(); 
-			return "Y".equals(oo);
-		}
-		return false;
-	}
-	
-	/****Set IsSOTrx***/
+public void setIsCash (boolean IsCash)
+{
+	set_Value (COLUMNNAME_IsCash, Boolean.valueOf(IsCash));
+}
 
-	public void setIsSOTrx (boolean IsSOTrx)
+/** Get Receipt.
+	@return This is a sales transaction (receipt)
+  */
+public boolean IsCash () 
+{
+	Object oo = get_Value(COLUMNNAME_IsCash);
+	if (oo != null) 
 	{
-		set_Value (COLUMNNAME_IsSOTrx, Boolean.valueOf(IsSOTrx));
+		 if (oo instanceof Boolean) 
+			 return ((Boolean)oo).booleanValue(); 
+		return "Y".equals(oo);
 	}
-	
-	/** Get IsSOTrx.
-		@return This is a sales transaction (IsSOTrx)
-	  */
-	public boolean IsSOTrx () 
+	return false;
+}
+
+/****Set IsSOTrx***/
+
+public void setIsSOTrx (boolean IsSOTrx)
+{
+	set_Value (COLUMNNAME_IsSOTrx, Boolean.valueOf(IsSOTrx));
+}
+
+/** Get IsSOTrx.
+	@return This is a sales transaction (IsSOTrx)
+  */
+public boolean IsSOTrx () 
+{
+	Object oo = get_Value(COLUMNNAME_IsSOTrx);
+	if (oo != null) 
 	{
-		Object oo = get_Value(COLUMNNAME_IsSOTrx);
-		if (oo != null) 
-		{
-			 if (oo instanceof Boolean) 
-				 return ((Boolean)oo).booleanValue(); 
-			return "Y".equals(oo);
-		}
-		return false;
+		 if (oo instanceof Boolean) 
+			 return ((Boolean)oo).booleanValue(); 
+		return "Y".equals(oo);
 	}
+	return false;
+}
+/************************************FIN AGREGADO POR P.S.****************************************************/
 	/** Set Reconciled.
 		@param IsReconciled 
 		Payment is reconciled with bank statement
@@ -2164,5 +2165,57 @@ public class X_C_Payment extends PO implements I_C_Payment, I_Persistent
 		if (bd == null)
 			 return Env.ZERO;
 		return bd;
+	}
+	
+	/**
+	 * Author: David Marquez
+	 * Email: davidmarsant@gmail.com
+	 * Date: 2021/11/17
+	 */
+	
+	/** Set SalesRep ID
+		@param SalesRep_ID
+		Final Client
+	  */
+	public void setSalesRep_ID (int SalesRep_ID)
+	{
+		if (SalesRep_ID < 1) 
+			set_Value (COLUMNNAME_SalesRep_ID, null);
+		else 
+			set_Value (COLUMNNAME_SalesRep_ID, Integer.valueOf(SalesRep_ID));
+	}
+	
+	/** Get SalesRep ID
+		@return SalesRep ID
+	  */
+	public int getSalesRep_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SalesRep_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+	
+	/** Set Final Client
+		@param SM_Usuario_ID
+		Final Client
+	  */
+	public void setSM_Usuario_ID (int SM_Usuario_ID)
+	{
+		if (SM_Usuario_ID < 1) 
+			set_Value (COLUMNNAME_SM_Usuario_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_Usuario_ID, Integer.valueOf(SM_Usuario_ID));
+	}
+	
+	/** Get Final Client.
+		@return Final Client
+	  */
+	public int getSM_Usuario_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_Usuario_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
 	}
 }

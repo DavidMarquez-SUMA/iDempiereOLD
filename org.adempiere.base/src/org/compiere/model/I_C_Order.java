@@ -1222,4 +1222,23 @@ public interface I_C_Order
 	  * Weight of a product
 	  */
 	public BigDecimal getWeight();
+	
+	/**
+	 * Author: David Marquez
+	 * Email: davidmarsant@gmail.com
+	 * Date: 2021/11/16
+	 */
+	
+	/** Column name SM_Usuario_ID */
+    public static final String COLUMNNAME_SM_Usuario_ID = "SM_Usuario_ID";
+
+	/** Set Final Client
+	  * Final Client
+	  */
+	public void setSM_Usuario_ID (int SM_Usuario_ID);
+
+	/** Get Final Client
+	  * Final Client
+	  */
+	public int getSM_Usuario_ID();
 }

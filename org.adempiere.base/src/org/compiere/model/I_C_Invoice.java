@@ -89,6 +89,32 @@ public interface I_C_Invoice
 	public int getAD_User_ID();
 
 	public org.compiere.model.I_AD_User getAD_User() throws RuntimeException;
+	
+	/** Column name AmountProfit */
+	public static final String COLUMNNAME_AmountProfit = "AmountProfit";
+	
+	/** Set AmountProfit
+	  * User AmountProfit
+	  */
+	public void setAmountProfit (BigDecimal AmountProfit);
+	
+	/** Get AmountProfit
+	  * User AmountProfit
+	  */
+	public BigDecimal getAmountProfit();
+	
+	/** Column name Amt */
+	public static final String COLUMNNAME_Amt = "Amt";
+	
+	/** Set Amt
+	  * User Amt
+	  */
+	public void setAmt (BigDecimal Amt);
+	
+	/** Get Amt
+	  * User Amt
+	  */
+	public BigDecimal getAmt();
 
     /** Column name C_Activity_ID */
     public static final String COLUMNNAME_C_Activity_ID = "C_Activity_ID";
@@ -412,6 +438,19 @@ public interface I_C_Invoice
 	  */
 	public Timestamp getDateAcct();
 
+    /** Column name DateDeliveryInvoiced */
+    public static final String COLUMNNAME_DateDeliveryInvoiced = "DateDeliveryInvoiced";
+
+	/** Set Date Delivery Invoiced.
+	  * Date Delivery Invoiced
+	  */
+	public void setDateDeliveryInvoiced (Timestamp DateDeliveryInvoiced);
+
+	/** Get Date Delivery Invoiced.
+	  * Date Delivery Invoiced
+	  */
+	public Timestamp getDateDeliveryInvoiced();
+
     /** Column name DateInvoiced */
     public static final String COLUMNNAME_DateInvoiced = "DateInvoiced";
 
@@ -450,6 +489,19 @@ public interface I_C_Invoice
 	  * Date the document was printed.
 	  */
 	public Timestamp getDatePrinted();
+
+    /** Column name DateProfit */
+    public static final String COLUMNNAME_DateProfit = "DateProfit";
+
+	/** Set Date Profit Invoiced.
+	  * Date Profit Invoiced
+	  */
+	public void setDateProfit (Timestamp DateProfit);
+
+	/** Get Date Profit Invoiced.
+	  * Date Profit Invoiced
+	  */
+	public Timestamp getDateProfit();
 
     /** Column name Description */
     public static final String COLUMNNAME_Description = "Description";
@@ -525,6 +577,19 @@ public interface I_C_Invoice
 	  */
 	public String getGenerateTo();
 
+    /** Column name GenerateWithholding */
+    public static final String COLUMNNAME_GenerateWithholding = "GenerateWithholding";
+
+	/** Set Generate With holding.
+	  * Generate With holding
+	  */
+	public void setGenerateWithholding (String GenerateWithholding);
+
+	/** Get Generate With holding.
+	  * Generate With holding
+	  */
+	public String getGenerateWithholding();
+
     /** Column name GrandTotal */
     public static final String COLUMNNAME_GrandTotal = "GrandTotal";
 
@@ -577,6 +642,45 @@ public interface I_C_Invoice
 	  */
 	public boolean isApproved();
 
+    /** Column name IsApproved2 */
+    public static final String COLUMNNAME_IsApproved2 = "IsApproved2";
+
+	/** Set Approved.
+	  * Indicates if this document requires approval
+	  */
+	public void setIsApproved2 (boolean IsApproved2);
+
+	/** Get Approved.
+	  * Indicates if this document requires approval
+	  */
+	public boolean IsApproved2();
+
+    /** Column name IsApproved3 */
+    public static final String COLUMNNAME_IsApproved3 = "IsApproved3";
+
+	/** Set Approved.
+	  * Indicates if this document requires approval
+	  */
+	public void setIsApproved3 (boolean IsApproved3);
+
+	/** Get Approved.
+	  * Indicates if this document requires approval
+	  */
+	public boolean IsApproved3();
+
+    /** Column name IsCash */
+    public static final String COLUMNNAME_IsCash = "IsCash";
+
+	/** Set Cash.
+	  * Indicates if this document has cash
+	  */
+	public void setIsCash (boolean IsCash);
+
+	/** Get Cash.
+	  * Indicates if this document has cash
+	  */
+	public boolean IsCash();
+
     /** Column name IsDiscountPrinted */
     public static final String COLUMNNAME_IsDiscountPrinted = "IsDiscountPrinted";
 
@@ -611,6 +715,19 @@ public interface I_C_Invoice
 	  * Document is in dispute
 	  */
 	public boolean isInDispute();
+
+    /** Column name IsMultiAccount */
+    public static final String COLUMNNAME_IsMultiAccount = "IsMultiAccount";
+
+	/** Set Multi Account.
+	  * Document is Multi Account
+	  */
+	public void setIsMultiAccount (boolean IsMultiAccount);
+
+	/** Get Multi Account.
+	  * Document is Multi Account
+	  */
+	public boolean IsMultiAccount();
 
     /** Column name IsPaid */
     public static final String COLUMNNAME_IsPaid = "IsPaid";
@@ -650,6 +767,45 @@ public interface I_C_Invoice
 	  * Indicates if this document / line is printed
 	  */
 	public boolean isPrinted();
+
+    /** Column name IsProfit */
+    public static final String COLUMNNAME_IsProfit = "IsProfit";
+
+	/** Set Profit.
+	  * Indicates if this document comes from profit
+	  */
+	public void setIsProfit (boolean IsProfit);
+
+	/** Get Profit.
+	  * Indicates if this document comes from profit
+	  */
+	public boolean IsProfit();
+
+    /** Column name IsRRHH */
+    public static final String COLUMNNAME_IsRRHH = "IsRRHH";
+
+	/** Set RRHH Document.
+	  * Indicates if this is a rrhh document
+	  */
+	public void setIsRRHH (boolean IsRRHH);
+
+	/** Get RRHH Document.
+	  * Indicates if this is a rrhh document
+	  */
+	public boolean IsRRHH();
+
+    /** Column name IsSelected */
+    public static final String COLUMNNAME_IsSelected = "IsSelected";
+
+	/** Set Selected Document.
+	  * Indicates if this is a selected document
+	  */
+	public void setIsSelected (boolean IsSelected);
+
+	/** Get Selected Document.
+	  * Indicates if this is a selected document
+	  */
+	public boolean IsSelected();
 
     /** Column name IsSelfService */
     public static final String COLUMNNAME_IsSelfService = "IsSelfService";
@@ -703,6 +859,19 @@ public interface I_C_Invoice
 	  */
 	public boolean isTransferred();
 
+    /** Column name LCO_PrintedFormControl_ID */
+    public static final String COLUMNNAME_LCO_PrintedFormControl_ID = "LCO_PrintedFormControl_ID";
+
+	/** Set Printed Form.
+	  * Unique identifier the printed form
+	  */
+	public void setLCO_PrintedFormControl_ID (int LCO_PrintedFormControl_ID);
+
+	/** Get Printed Form.
+	  * Unique identifier the printed form
+	  */
+	public int getLCO_PrintedFormControl_ID();
+
     /** Column name M_PriceList_ID */
     public static final String COLUMNNAME_M_PriceList_ID = "M_PriceList_ID";
 
@@ -732,6 +901,19 @@ public interface I_C_Invoice
 	public int getM_RMA_ID();
 
 	public org.compiere.model.I_M_RMA getM_RMA() throws RuntimeException;
+
+    /** Column name NotificationNode */
+    public static final String COLUMNNAME_NotificationNode = "NotificationNode";
+
+	/** Set Notification Node.
+	  * Which notification node has this document
+	  */
+	public void setNotificationNode (String NotificationNode);
+
+	/** Get Notification Node.
+	  * Which notification node has this document
+	  */
+	public String getNotificationNode();
 
     /** Column name PaymentRule */
     public static final String COLUMNNAME_PaymentRule = "PaymentRule";
@@ -870,6 +1052,124 @@ public interface I_C_Invoice
 	  */
 	public boolean isSendEMail();
 
+    /** Column name SM_C_Invoice_ID */
+    public static final String COLUMNNAME_SM_C_Invoice_ID = "SM_C_Invoice_ID";
+
+	/** Set Invoice SUMA.
+	  * Invoice SUMA
+	  */
+	public void setSM_C_Invoice_ID (int SM_C_Invoice_ID);
+
+	/** Get Invoice SUMA.
+	  * Invoice SUMA
+	  */
+	public int getSM_C_Invoice_ID();
+
+    /** Column name SM_ControlNumber */
+    public static final String COLUMNNAME_SM_ControlNumber = "SM_ControlNumber";
+
+	public void setSM_ControlNumber (String SM_ControlNumber);
+	
+	public String getSM_ControlNumber();
+
+    /** Column name SM_C_Payment_ID */
+    public static final String COLUMNNAME_SM_C_Payment_ID = "SM_C_Payment_ID";
+
+	public void setSM_C_Payment_ID (int SM_C_Payment_ID);
+	
+	public int getSM_C_Payment_ID();
+
+    /** Column name SM_Credit_Debit */
+    public static final String COLUMNNAME_SM_Credit_Debit = "SM_Credit_Debit";
+
+	public void setSM_Credit_Debit (boolean SM_Credit_Debit);
+	
+	public boolean getSM_Credit_Debit();
+
+    /** Column name SM_Credit_Note */
+    public static final String COLUMNNAME_SM_Credit_Note = "SM_Credit_Note";
+
+	public void setSM_Credit_Note (boolean SM_Credit_Note);
+	
+	public boolean getSM_Credit_Note();
+
+    /** Column name SM_Credit_Note_Profit */
+    public static final String COLUMNNAME_SM_Credit_Note_Profit = "SM_Credit_Note_Profit";
+
+	public void setSM_Credit_Note_Profit (String SM_Credit_Note_Profit);
+	
+	public String getSM_Credit_Note_Profit();
+
+    /** Column name SM_DateDoc */
+    public static final String COLUMNNAME_SM_DateDoc = "SM_DateDoc";
+
+	public void setSM_DateDoc (Timestamp SM_DateDoc);
+
+	public Timestamp getSM_DateDoc();
+
+    /** Column name SM_Dep_Uni */
+    public static final String COLUMNNAME_SM_Dep_Uni = "SM_Dep_Uni";
+
+	public void setSM_Dep_Uni (boolean SM_Dep_Uni);
+	
+	public boolean getSM_Dep_Uni();
+
+    /** Column name SM_InvoiceAssociated_ID */
+    public static final String COLUMNNAME_SM_InvoiceAssociated_ID = "SM_InvoiceAssociated_ID";
+
+	public void setSM_InvoiceAssociated_ID (int SM_InvoiceAssociated_ID);
+	
+	public int getSM_InvoiceAssociated_ID();
+
+    /** Column name SM_InvoiceDocumentNo */
+    public static final String COLUMNNAME_SM_InvoiceDocumentNo = "SM_InvoiceDocumentNo";
+
+	public void setSM_InvoiceDocumentNo (String SM_InvoiceDocumentNo);
+	
+	public String getSM_InvoiceDocumentNo();
+
+    /** Column name SM_InvoiceFiles */
+    public static final String COLUMNNAME_SM_InvoiceFiles = "SM_InvoiceFiles";
+
+	public void setSM_InvoiceFiles (String SM_InvoiceFiles);
+	
+	public String getSM_InvoiceFiles();
+
+    /** Column name SM_Manual_Return_ID */
+    public static final String COLUMNNAME_SM_Manual_Return_ID = "SM_Manual_Return_ID";
+
+	public void setSM_Manual_Return_ID (int SM_Manual_Return_ID);
+	
+	public int getSM_Manual_Return_ID();
+
+    /** Column name SM_M_Promotion_ID */
+    public static final String COLUMNNAME_SM_M_Promotion_ID = "SM_M_Promotion_ID";
+
+	public void setSM_M_Promotion_ID (int SM_M_Promotion_ID);
+	
+	public int getSM_M_Promotion_ID();
+
+    /** Column name SM_New_Rate */
+    public static final String COLUMNNAME_SM_New_Rate = "SM_New_Rate";
+
+	public void setSM_New_Rate (String SM_New_Rate);
+	
+	public String getSM_New_Rate();
+
+    /** Column name SM_Package_ID */
+    public static final String COLUMNNAME_SM_Package_ID = "SM_Package_ID";
+
+	public void setSM_Package_ID (int SM_Package_ID);
+	
+	public int getSM_Package_ID();
+
+    /** Column name SM_Process_RT */
+    public static final String COLUMNNAME_SM_Process_RT = "SM_Process_RT";
+
+	public void setSM_Process_RT (boolean SM_Process_RT);
+	
+	public boolean getSM_Process_RT();
+
     /** Column name TotalLines */
     public static final String COLUMNNAME_TotalLines = "TotalLines";
 
@@ -928,4 +1228,36 @@ public interface I_C_Invoice
 	public int getUser2_ID();
 
 	public org.compiere.model.I_C_ElementValue getUser2() throws RuntimeException;
+
+    /** Column name WithholdingAmt */
+    public static final String COLUMNNAME_WithholdingAmt = "WithholdingAmt";
+
+	/** Set With holding amt.
+	  * Total
+	  */
+	public void setWithholdingAmt (BigDecimal WithholdingAmt);
+
+	/** Get With holding amt.
+	  * Total
+	  */
+	public BigDecimal getWithholdingAmt();
+	
+	/**
+	 * Author: David Marquez
+	 * Email: davidmarsant@gmail.com
+	 * Date: 2021/11/16
+	 */
+	
+	/** Column name SM_Usuario_ID */
+    public static final String COLUMNNAME_SM_Usuario_ID = "SM_Usuario_ID";
+
+	/** Set Final Client
+	  * Final Client
+	  */
+	public void setSM_Usuario_ID (int SM_Usuario_ID);
+
+	/** Get Final Client
+	  * Final Client
+	  */
+	public int getSM_Usuario_ID();
 }

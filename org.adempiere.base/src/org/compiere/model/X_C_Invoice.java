@@ -1634,4 +1634,520 @@ public class X_C_Invoice extends PO implements I_C_Invoice, I_Persistent
 			 return 0;
 		return ii.intValue();
 	}
+
+	
+	public void setAmountProfit(BigDecimal AmountProfit) {
+		set_ValueNoCheck (COLUMNNAME_AmountProfit, AmountProfit);
+	}
+
+	
+	public BigDecimal getAmountProfit() {
+		BigDecimal bd = (BigDecimal)get_Value(COLUMNNAME_AmountProfit);
+		if (bd == null)
+			 return Env.ZERO;
+		return bd;
+	}
+
+	
+	public void setAmt(BigDecimal Amt) {
+		set_ValueNoCheck (COLUMNNAME_Amt, Amt);
+	}
+
+	
+	public BigDecimal getAmt() 
+	{
+		BigDecimal bd = (BigDecimal)get_Value(COLUMNNAME_Amt);
+		if (bd == null)
+			 return Env.ZERO;
+		return bd;
+	}
+
+	
+	public void setDateDeliveryInvoiced(Timestamp DateDeliveryInvoiced) 
+	{
+		set_Value (COLUMNNAME_DateDeliveryInvoiced, DateDeliveryInvoiced);
+	}
+
+	
+	public Timestamp getDateDeliveryInvoiced()
+	{
+		return (Timestamp)get_Value(COLUMNNAME_DateDeliveryInvoiced);
+	}
+
+	
+	public void setDateProfit(Timestamp DateProfit) 
+	{
+		set_Value (COLUMNNAME_DateProfit, DateProfit);
+	}
+
+	
+	public Timestamp getDateProfit() 
+	{
+		return (Timestamp)get_Value(COLUMNNAME_DateProfit);
+	}
+
+	
+	public void setGenerateWithholding(String GenerateWithholding) {
+		set_ValueNoCheck (COLUMNNAME_GenerateWithholding, GenerateWithholding);
+	}
+
+	
+	public String getGenerateWithholding() {
+		return (String)get_Value(COLUMNNAME_GenerateWithholding);
+	}
+
+	
+	public void setIsApproved2(boolean IsApproved2) {
+		set_ValueNoCheck (COLUMNNAME_IsApproved2, Boolean.valueOf(IsApproved2));
+	}
+
+	
+	public boolean IsApproved2() {
+		Object oo = get_Value(COLUMNNAME_IsApproved2);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setIsApproved3(boolean IsApproved3) {
+		set_ValueNoCheck (COLUMNNAME_IsApproved3, Boolean.valueOf(IsApproved3));
+	}
+
+	
+	public boolean IsApproved3() {
+		Object oo = get_Value(COLUMNNAME_IsApproved3);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setIsCash(boolean IsCash) {
+		set_ValueNoCheck (COLUMNNAME_IsCash, Boolean.valueOf(IsCash));
+	}
+
+	
+	public boolean IsCash() {
+		Object oo = get_Value(COLUMNNAME_IsCash);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setIsMultiAccount(boolean IsMultiAccount) 
+	{
+		set_ValueNoCheck (COLUMNNAME_IsMultiAccount, Boolean.valueOf(IsMultiAccount));
+	}
+
+	
+	public boolean IsMultiAccount() 
+	{
+		Object oo = get_Value(COLUMNNAME_IsMultiAccount);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setIsProfit(boolean IsProfit) 
+	{
+		set_ValueNoCheck (COLUMNNAME_IsProfit, Boolean.valueOf(IsProfit));
+	}
+
+	
+	public boolean IsProfit() 
+	{
+		Object oo = get_Value(COLUMNNAME_IsProfit);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setIsRRHH(boolean IsRRHH) 
+	{
+		set_ValueNoCheck (COLUMNNAME_IsRRHH, Boolean.valueOf(IsRRHH));
+	}
+
+	
+	public boolean IsRRHH() 
+	{
+		Object oo = get_Value(COLUMNNAME_IsRRHH);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setIsSelected(boolean IsSelected) {
+		set_ValueNoCheck (COLUMNNAME_IsSelected, Boolean.valueOf(IsSelected));
+	}
+
+	
+	public boolean IsSelected() 
+	{
+		Object oo = get_Value(COLUMNNAME_IsSelected);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setLCO_PrintedFormControl_ID(int LCO_PrintedFormControl_ID) 
+	{
+		if (LCO_PrintedFormControl_ID < 1) 
+			set_Value (COLUMNNAME_LCO_PrintedFormControl_ID, null);
+		else 
+			set_Value (COLUMNNAME_LCO_PrintedFormControl_ID, Integer.valueOf(LCO_PrintedFormControl_ID));
+	}
+
+	
+	public int getLCO_PrintedFormControl_ID() 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_LCO_PrintedFormControl_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	
+	public void setNotificationNode(String NotificationNode) 
+	{
+		set_ValueNoCheck (COLUMNNAME_NotificationNode, NotificationNode);
+	}
+
+	
+	public String getNotificationNode() 
+	{
+		return (String)get_Value(COLUMNNAME_NotificationNode);
+	}
+
+	
+	public void setSM_C_Invoice_ID(int SM_C_Invoice_ID) 
+	{
+		if (SM_C_Invoice_ID < 1) 
+			set_Value (COLUMNNAME_SM_C_Invoice_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_C_Invoice_ID, Integer.valueOf(SM_C_Invoice_ID));
+	}
+
+	
+	public int getSM_C_Invoice_ID() 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_C_Invoice_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	
+	public void setSM_ControlNumber(String SM_ControlNumber) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_ControlNumber, SM_ControlNumber);
+	}
+
+	
+	public String getSM_ControlNumber() 
+	{
+		return (String)get_Value(COLUMNNAME_SM_ControlNumber);
+	}
+
+	
+	public void setSM_C_Payment_ID(int SM_C_Payment_ID) 
+	{
+		if (SM_C_Payment_ID < 1) 
+			set_Value (COLUMNNAME_SM_C_Payment_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_C_Payment_ID, Integer.valueOf(SM_C_Payment_ID));
+	}
+
+	
+	public int getSM_C_Payment_ID()  
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_C_Payment_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	
+	public void setSM_Credit_Debit(boolean SM_Credit_Debit) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_Credit_Debit, Boolean.valueOf(SM_Credit_Debit));
+	}
+
+	
+	public boolean getSM_Credit_Debit() 
+	{
+		Object oo = get_Value(COLUMNNAME_SM_Credit_Debit);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setSM_Credit_Note(boolean SM_Credit_Note) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_Credit_Note, Boolean.valueOf(SM_Credit_Note));
+	}
+
+	
+	public boolean getSM_Credit_Note() 
+	{
+		Object oo = get_Value(COLUMNNAME_SM_Credit_Note);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setSM_Credit_Note_Profit(String SM_Credit_Note_Profit) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_Credit_Note_Profit, SM_Credit_Note_Profit);
+	}
+
+	
+	public String getSM_Credit_Note_Profit() 
+	{
+		return (String)get_Value(COLUMNNAME_SM_Credit_Note_Profit);
+	}
+
+	
+	public void setSM_DateDoc(Timestamp SM_DateDoc) 
+	{
+		set_Value (COLUMNNAME_SM_DateDoc, SM_DateDoc);
+	}
+
+	
+	public Timestamp getSM_DateDoc() 
+	{
+		return (Timestamp)get_Value(COLUMNNAME_SM_DateDoc);
+	}
+
+	
+	public void setSM_Dep_Uni(boolean SM_Dep_Uni) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_Dep_Uni, Boolean.valueOf(SM_Dep_Uni));
+	}
+
+	
+	public boolean getSM_Dep_Uni() 
+	{
+		Object oo = get_Value(COLUMNNAME_SM_Dep_Uni);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setSM_InvoiceAssociated_ID(int SM_InvoiceAssociated_ID) 
+	{
+		if (SM_InvoiceAssociated_ID < 1) 
+			set_Value (COLUMNNAME_SM_InvoiceAssociated_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_InvoiceAssociated_ID, Integer.valueOf(SM_InvoiceAssociated_ID));
+	}
+
+	
+	public int getSM_InvoiceAssociated_ID() 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_InvoiceAssociated_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	
+	public void setSM_InvoiceDocumentNo(String SM_InvoiceDocumentNo) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_InvoiceDocumentNo, SM_InvoiceDocumentNo);
+	}
+
+	
+	public String getSM_InvoiceDocumentNo() 
+	{
+		return (String)get_Value(COLUMNNAME_SM_InvoiceDocumentNo);
+	}
+
+	
+	public void setSM_InvoiceFiles(String SM_InvoiceFiles) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_InvoiceFiles, SM_InvoiceFiles);
+	}
+
+	
+	public String getSM_InvoiceFiles() 
+	{
+		return (String)get_Value(COLUMNNAME_SM_InvoiceFiles);
+	}
+
+	
+	public void setSM_Manual_Return_ID(int SM_Manual_Return_ID) 
+	{
+		if (SM_Manual_Return_ID < 1) 
+			set_Value (COLUMNNAME_SM_Manual_Return_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_Manual_Return_ID, Integer.valueOf(SM_Manual_Return_ID));
+	}
+
+	
+	public int getSM_Manual_Return_ID() 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_Manual_Return_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	
+	public void setSM_M_Promotion_ID(int SM_M_Promotion_ID) 
+	{
+		if (SM_M_Promotion_ID < 1) 
+			set_Value (COLUMNNAME_SM_M_Promotion_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_M_Promotion_ID, Integer.valueOf(SM_M_Promotion_ID));
+	}
+
+	
+	public int getSM_M_Promotion_ID() 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_M_Promotion_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	
+	public void setSM_New_Rate(String SM_New_Rate) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_New_Rate, SM_New_Rate);
+	}
+
+	
+	public String getSM_New_Rate() 
+	{
+		return (String)get_Value(COLUMNNAME_SM_New_Rate);
+	}
+
+	
+	public void setSM_Package_ID(int SM_Package_ID) 
+	{
+		if (SM_Package_ID < 1) 
+			set_Value (COLUMNNAME_SM_Package_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_Package_ID, Integer.valueOf(SM_Package_ID));
+	}
+
+	
+	public int getSM_Package_ID() 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_Package_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
+
+	
+	public void setSM_Process_RT(boolean SM_Process_RT) 
+	{
+		set_ValueNoCheck (COLUMNNAME_SM_Credit_Note, Boolean.valueOf(SM_Process_RT));
+	}
+
+	
+	public boolean getSM_Process_RT() {
+		Object oo = get_Value(COLUMNNAME_SM_Process_RT);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+
+	
+	public void setWithholdingAmt(BigDecimal WithholdingAmt) 
+	{
+		set_ValueNoCheck (COLUMNNAME_WithholdingAmt, WithholdingAmt);
+	}
+
+	
+	public BigDecimal getWithholdingAmt() 
+	{
+		BigDecimal bd = (BigDecimal)get_Value(COLUMNNAME_WithholdingAmt);
+		if (bd == null)
+			 return Env.ZERO;
+		return bd;
+	}
+	
+	/**
+	 * Author: David Marquez
+	 * Email: davidmarsant@gmail.com
+	 * Date: 2021/11/16
+	 */
+	
+	/** Set Final Client
+		@param SM_Usuario_ID
+		Final Client
+	  */
+	public void setSM_Usuario_ID (int SM_Usuario_ID)
+	{
+		if (SM_Usuario_ID < 1) 
+			set_Value (COLUMNNAME_SM_Usuario_ID, null);
+		else 
+			set_Value (COLUMNNAME_SM_Usuario_ID, Integer.valueOf(SM_Usuario_ID));
+	}
+	
+	/** Get Final Client
+		@return Final Client
+	  */
+	public int getSM_Usuario_ID () 
+	{
+		Integer ii = (Integer)get_Value(COLUMNNAME_SM_Usuario_ID);
+		if (ii == null)
+			 return 0;
+		return ii.intValue();
+	}
 }
