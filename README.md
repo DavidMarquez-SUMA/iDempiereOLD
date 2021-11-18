@@ -1,12 +1,42 @@
-IDEMPIERE IS A COMMUNITY PROJECT THAT RESPECTS AND PROTECTS CONTRIBUTIONS AND MAINTAINS ALL CREDITS IN PLACE HERE IN ITS OFFICIAL REPOSITORY. ALSO WE OBEY THE GPL LAW THAT BASICALLY SAYS 'YOU ARE FREE TO MODIFY THE SOURCE BUT SHARE BACK THE CHANGES'. IF NOT KINDLY INFORM US. (Please write to red1@red1.org).
-HOWEVER ALL SOURCE GOES THROUGH STRICT PEER REVIEW BEFORE MAKING IT TO THE CORE. (Please check http://ci.idempiere.org/)
+# iDempiere
+## The best ERP (Enterprise Resource Planning)
 
-AS WE ARE USING THE OSGI PLUGIN APPROACH, A MARKETPLACE OF INDEPENDENT PLUGINS THAT ARE LOOSELY COUPLED TO THE CORE IS NOW POSSIBLE WITHOUT IMPACTING THE CORE THUS REDUCING ITS BLOAT (Please do so at http://wiki.idempiere.org/en/Category:Available_Plugins)
+[![N|Solid](http://pedido.sumagroups.com/assets/img/tag.png)](https://sumagroups.com)
 
-WE WORK WELL DOCUMENTING ISSUES (Please do so at https://idempiere.atlassian.net/secure/Dashboard.jspa)
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
 
-ALL COMMUNICATION REGARDING CODE IS APPRECIATED AT https://groups.google.com/forum/#!forum/idempiere.
+iDempiere. Community Powered Enterprise, also known as OSGi + ADempiere, is an open source Enterprise Resource Planning software that is fully navigable on PCs, tablets and smartphones, it also has customer relationship management and supply chain management functions.
 
-COMMUNITY LEADER
+## Features
 
-Redhuan D. Oon
+-  POS Order Process Fixed
+-  Assets Adition Process Fixed
+
+## License
+
+GPLv2
+
+**Free Software, Hell Yeah!**
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+   [dill]: <https://github.com/joemccann/dillinger>
+   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+   [john gruber]: <http://daringfireball.net>
+   [df1]: <http://daringfireball.net/projects/markdown/>
+   [markdown-it]: <https://github.com/markdown-it/markdown-it>
+   [Ace Editor]: <http://ace.ajax.org>
+   [node.js]: <http://nodejs.org>
+   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
+   [jQuery]: <http://jquery.com>
+   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
+   [express]: <http://expressjs.com>
+   [AngularJS]: <http://angularjs.org>
+   [Gulp]: <http://gulpjs.com>
+
+   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
+   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
+   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
+   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
+   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
+   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
