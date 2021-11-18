@@ -3,8 +3,6 @@
 
 [![N|Solid](http://pedido.sumagroups.com/assets/img/tag.png)](https://sumagroups.com)
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
-
 iDempiere. Community Powered Enterprise, also known as OSGi + ADempiere, is an open source Enterprise Resource Planning software that is fully navigable on PCs, tablets and smartphones, it also has customer relationship management and supply chain management functions.
 
 ## Features
