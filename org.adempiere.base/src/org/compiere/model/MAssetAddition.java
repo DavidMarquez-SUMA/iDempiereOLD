@@ -1045,6 +1045,14 @@ public class MAssetAddition extends X_A_Asset_Addition
 		{
 			int C_InvoiceLine_ID = getC_InvoiceLine_ID();
 			MInvoiceLine invoiceLine = new MInvoiceLine(getCtx(), C_InvoiceLine_ID, get_TrxName());
+			
+			/**
+			 * Author: David Marquez
+			 * Email: davidmarsant@gmail.com
+			 * Date: 2021/11/18
+			 */
+			invoiceLine.setAD_Org_ID(this.getAD_Org_ID());
+			
 			invoiceLine.setA_Processed(!isReversal);
 			invoiceLine.setA_Asset_ID(isReversal ? 0 : getA_Asset_ID());
 			invoiceLine.saveEx();
