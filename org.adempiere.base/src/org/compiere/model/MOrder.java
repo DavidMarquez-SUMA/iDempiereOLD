@@ -2096,7 +2096,6 @@ public class MOrder extends X_C_Order implements DocAction
 				payment.setVoiceAuthCode(pp.getVoiceAuthCode());
 			}
 
-			payment.setC_BankAccount_ID(ba.getC_BankAccount_ID());
 			payment.setRoutingNo(pp.getRoutingNo());
 			payment.setAccountNo(pp.getAccountNo());
 			payment.setSwiftCode(pp.getSwiftCode());
@@ -2110,16 +2109,10 @@ public class MOrder extends X_C_Order implements DocAction
 			//
 			payment.setC_BPartner_ID(this.getC_BPartner_ID());
 			
-			/**
-			 * Author: David Marquez
-			 * Email: davidmarsant@gmail.com
-			 * Date: 2021/11/16
-			 * 
-			 * 1) Final Client
-			 * 2) Sales Rep
-			 */
+			// POS Data
 			payment.setSM_Usuario_ID(this.getSM_Usuario_ID());
 			payment.setSalesRep_ID(this.getSalesRep_ID());
+			payment.setC_BankAccount_ID( pp.getC_BankAccount_ID() > 0 ? pp.getC_BankAccount_ID() : ba.getC_BankAccount_ID() );
 			
 			payment.setC_Invoice_ID(lastInvoice.getC_Invoice_ID());
 			// payment.setC_Order_ID(this.getC_Order_ID()); / do not set order to avoid the prepayment flag

@@ -1344,73 +1344,75 @@ public class X_C_Payment extends PO implements I_C_Payment, I_Persistent
 	}
 
 	/** Set Receipt.
-	@param IsReceipt 
-	This is a sales transaction (receipt)
-  */
-public void setIsReceipt (boolean IsReceipt)
-{
-	set_Value (COLUMNNAME_IsReceipt, Boolean.valueOf(IsReceipt));
-}
-
-/** Get Receipt.
-	@return This is a sales transaction (receipt)
-  */
-public boolean isReceipt () 
-{
-	Object oo = get_Value(COLUMNNAME_IsReceipt);
-	if (oo != null) 
+		@param IsReceipt 
+		This is a sales transaction (receipt)
+	  */
+	public void setIsReceipt (boolean IsReceipt)
 	{
-		 if (oo instanceof Boolean) 
-			 return ((Boolean)oo).booleanValue(); 
-		return "Y".equals(oo);
+		set_Value (COLUMNNAME_IsReceipt, Boolean.valueOf(IsReceipt));
 	}
-	return false;
-}
-/********************************AGREGADO POR P.S.****************************************************/
-/****Set IsCash***/
-
-public void setIsCash (boolean IsCash)
-{
-	set_Value (COLUMNNAME_IsCash, Boolean.valueOf(IsCash));
-}
-
-/** Get Receipt.
-	@return This is a sales transaction (receipt)
-  */
-public boolean IsCash () 
-{
-	Object oo = get_Value(COLUMNNAME_IsCash);
-	if (oo != null) 
+	
+	/** Get Receipt.
+		@return This is a sales transaction (receipt)
+	  */
+	public boolean isReceipt () 
 	{
-		 if (oo instanceof Boolean) 
-			 return ((Boolean)oo).booleanValue(); 
-		return "Y".equals(oo);
+		Object oo = get_Value(COLUMNNAME_IsReceipt);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
 	}
-	return false;
-}
-
-/****Set IsSOTrx***/
-
-public void setIsSOTrx (boolean IsSOTrx)
-{
-	set_Value (COLUMNNAME_IsSOTrx, Boolean.valueOf(IsSOTrx));
-}
-
-/** Get IsSOTrx.
-	@return This is a sales transaction (IsSOTrx)
-  */
-public boolean IsSOTrx () 
-{
-	Object oo = get_Value(COLUMNNAME_IsSOTrx);
-	if (oo != null) 
+	
+	/********************************AGREGADO POR P.S.****************************************************/
+	/****Set IsCash***/
+	
+	public void setIsCash (boolean IsCash)
 	{
-		 if (oo instanceof Boolean) 
-			 return ((Boolean)oo).booleanValue(); 
-		return "Y".equals(oo);
+		set_Value (COLUMNNAME_IsCash, Boolean.valueOf(IsCash));
 	}
-	return false;
-}
-/************************************FIN AGREGADO POR P.S.****************************************************/
+	
+	/** Get Receipt.
+		@return This is a sales transaction (receipt)
+	  */
+	public boolean IsCash () 
+	{
+		Object oo = get_Value(COLUMNNAME_IsCash);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+	
+	/****Set IsSOTrx***/
+	
+	public void setIsSOTrx (boolean IsSOTrx)
+	{
+		set_Value (COLUMNNAME_IsSOTrx, Boolean.valueOf(IsSOTrx));
+	}
+	
+	/** Get IsSOTrx.
+		@return This is a sales transaction (IsSOTrx)
+	  */
+	public boolean IsSOTrx () 
+	{
+		Object oo = get_Value(COLUMNNAME_IsSOTrx);
+		if (oo != null) 
+		{
+			 if (oo instanceof Boolean) 
+				 return ((Boolean)oo).booleanValue(); 
+			return "Y".equals(oo);
+		}
+		return false;
+	}
+	/************************************ FIN AGREGADO POR PSALAMANCA ****************************************************/
+	
 	/** Set Reconciled.
 		@param IsReconciled 
 		Payment is reconciled with bank statement
